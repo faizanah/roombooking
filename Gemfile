@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.6.3'
+ruby '2.7.0'
 
 # Application config
 gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
@@ -11,6 +11,9 @@ gem 'dotenv-rails', '~> 2.7', require: 'dotenv/rails-now'
 #   2) gem install sassc -- --disable-march-tune-native
 #   3) bundle install
 gem 'sassc', '~> 2.2'
+
+# The following line is needed because sync is no longer installed by default in Ruby 2.7
+gem 'sync'
 
 # Rails
 gem 'rails', '~> 6.0.2'
